@@ -1,8 +1,7 @@
-# SmartMentor - Mental Health-Oriented Chatbot with ChatGPT API
+# InnerVerse - Mental Health-Oriented Chatbot with ChatGPT API
 Description:
 This repository contains the codebase and resources for a mental health-oriented chatbot developed using the ChatGPT API. The chatbot aims to provide support, information, and resources related to mental health queries. The project focuses on efficient communication, security, and accuracy.
 
-![Demo](demo3.jpeg)
 Features:
 
 * Utilizes the ChatGPT API for the basic chatbot framework.
@@ -16,12 +15,27 @@ Features:
 * Uses OpenAI models: text-embedding-ada-002 for text-to-vector conversion, GPT Turbo 3.5 for natural conversations.
 * Enhances comprehension of user sentiment and adjusts responses accordingly.
 * Ensures moderation and filters out hateful speech for a positive user experience.
+* Has multiple API's incorporated to include the service of connecting nearby support centres and emergency services (Detects self harm tones and automatically alerts authorities).
+* Multi- Lingual Support
 
-Getting Started:
-To set up the project locally, follow these steps:
+[Working demo:](https://www.youtube.com/watch?v=rYcOEaN-v0I)
 
-* Clone the repository: git clone https://github.com/friedcheesee/IEEEsmartmentor.git
-* Configure your API keys, and the pinecone index in the designated configuration files, and server file.
-* Open a terminal and run 'pip install -r requirements.txt'
-* Run the chatbot application: MentalHealthServerV2.py, and then MentalChatClient1.py
-* Interact with the chatbot through the provided interface.
+Query to LLM which acts as a friend or a mental health specialist based on input:
+![openquery](/assets/open.png)
+
+Vector results from pinecone DB which contains verified mental health resources.
+![vector](/assets/vec.png)
+
+Block Diagram:
+![block](/assets/block.png)
+
+
+References:
+
+* https://docs.langchain.com/docs/
+* https://platform.openai.com/docs/api-reference
+* https://docs.streamlit.io/
+* https://developers.google.com/maps/documentation
+* https://docs.pinecone.io/docs/overview
+
+
